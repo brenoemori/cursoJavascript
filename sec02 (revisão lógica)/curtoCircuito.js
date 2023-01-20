@@ -9,5 +9,5 @@ let isValid = true
 //    console.log(`é valido`)
 //}
 
-//isValid && console.log(`é valido`)
-isValid || console.log(`é valido`)
+isValid && console.log(`é valido`)
+isValid || console.log(`não é valido`)
