@@ -22,9 +22,21 @@
 
         document.write("saiu do loop while")
 
+        do {
+            if(i > 10) {
+                alert("Digitou numero maior que 10")
+                break
+            }
+            document.write(`${numero} x ${i} = ${(i * numero)} <br>`)
+        } while (i <= 10);
+
+        document.write(`Saiu do loop Do While`)
+
+
         for (let index = 0; index <= 10; index++) {
             document.write(`${numero} * ${index} = ${(index * numero)} <br>`)
         }
+
 
         document.write("Saiu do loop for");
 

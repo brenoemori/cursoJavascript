@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcoes</title>
+</head>
+<body>
+
+    <h1>Funções</h1>
+
+    <script>
+
+        //declaracao de funcao
+        function ola(){
+            document.write('Olá')
+        }
+
+        ola()
+
+        //expressao de funcao
+        const ola2 = function(){
+            console.log('Olá mundo de function expression')
+        }
+        ola2()
+
+        //arrow function
+
+        const ola3 = () => console.log("Arrow function")
+        ola3()
+
+        // retorno de valores
+        function obtemDiaSemana(){
+            return new Date().getDay()
+        }
+
+        let dia = obtemDiaSemana()
+
+       /* switch (dia) {
+            case 0:
+                dia = "Domingo"
+                break;
+            case 1 :
+                dia = "Segunda"
+                break;
+            case 2:
+                dia = "terça"
+                break;
+            case 3:
+                dia = "Quarta"
+                break
+            case 4:
+                dia = "Quinta"
+                break
+            case 5:
+                dia = "Sexta"
+                break
+            case 6:
+                dia = "Sábado"
+                break
+            default:
+                dia = "Inválido"
+                break;
+        } */
+
+        console.log(dia)
+
+    </script>
+
+</body>
+</html>
