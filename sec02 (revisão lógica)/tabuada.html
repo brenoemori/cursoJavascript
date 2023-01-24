@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>funções - tabuada</h1>
+
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button>   <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="output"></div>
+
+    <script>
+        //! pedir para o usuario digitar um numero 
+        //! mostrar a tabuada desse numero de 1 a 1000.
+        //! Toda info que vem da interface do usuário é String
+        //! Dar um erro ao usuário não colocar um número no campo
+
+        const output = document.getElementById('output')
+
+        function mostrarTabuada(){
+            let numero = Number(prompt("Digite um número"))
+            output.innerHTML = `Tabuada do ${numero} de 1 a 1000 <br>`
+            let msg = ""
+
+            console.log(typeof(numero))
+            if(isNaN(numero)){
+                window.alert('Digite um número!')
+                mostrarTabuada()
+            }
+
+            for (let i = 1; i <= 1000 ; i++) {
+                msg += `${numero} X ${i} = ${numero * i} <br>` ;
+            }
+            output.innerHTML = msg            
+        }
+
+        function limparTabuada() {
+            msg = " "
+            output.innerHTML = msg
+        }
+
+
+    </script>
+
+</body>
+</html>
